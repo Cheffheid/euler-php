@@ -29,17 +29,17 @@
 		<p>
 			<pre>
 				<code>
-					$i = 1;
-					$sum = 0;
-					
-					while( $i < 1000 ) {
-						if( $i % 3 === 0 || $i % 5 === 0 ) {
-							$sum += $i;
-						}
-						$i++;
-					}
-					
-					echo "The solution is: " . $sum;
+	$i = 1;
+	$sum = 0;
+	
+	while( $i < 1000 ) {
+		if( $i % 3 === 0 || $i % 5 === 0 ) {
+			$sum += $i;
+		}
+		$i++;
+	}
+	
+	echo "The solution is: " . $sum;
 				</code>
 			</pre>
 		</p>
@@ -47,15 +47,15 @@
 		<p>
 			<pre>
 				<code>
-					$sum = 0;
-					
-					for( $i = 1; $i < 1000; $i++ ) {
-						if( $i % 3 === 0 || $i % 5 === 0 ) {
-							$sum += $i;
-						}
-					}
-					
-					echo "The solution is: " . $sum;
+	$sum = 0;
+	
+	for( $i = 1; $i < 1000; $i++ ) {
+		if( $i % 3 === 0 || $i % 5 === 0 ) {
+			$sum += $i;
+		}
+	}
+	
+	echo "The solution is: " . $sum;
 				</code>
 			</pre>
 		</p>
