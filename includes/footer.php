@@ -1,0 +1,1 @@
+		<small>Written by Jeffrey de Wit</small>
