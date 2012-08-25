@@ -7,8 +7,8 @@
 	</header>
 	<div role="main">
 		<?php echo getProblemDescription(3); ?>
+		<!-- Problem: What is the largest prime factor of the number 600851475143 ? -->
 		<!-- Switching the code around for this one, due to the use of "exit" -->
-		
 		<p>
 			<pre>
 				<code>
@@ -19,7 +19,7 @@
 			{
 				// Using bcmod, instead of regular modulus, because of the ridiculously huge number breaking things otherwise
 				if( bcmod("$number",  "$i") == 0 ){
-					// Run the function again, but this time divided by $i to get the next smallest prime
+					// Run the function again, but this time divided by $i to get the next prime factor
 					highestprime( $number/$i );
 					exit;
 				}
