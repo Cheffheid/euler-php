@@ -12,23 +12,23 @@
 		<p>
 			<pre>
 				<code>
-		function highestprime($number){
-			
-			// Run through the numbers, starting with 2 as the lowest prime
-			for($i = 2; $i < $number; $i++)
-			{
-				// Using bcmod, instead of regular modulus, because of the ridiculously huge number breaking things otherwise
-				if( bcmod("$number",  "$i") == 0 ){
-					// Run the function again, but this time divided by $i to get the next prime factor
-					highestprime( $number/$i );
-					exit;
-				}
+	function highestprime($number){
+		
+		// Run through the numbers, starting with 2 as the lowest prime
+		for($i = 2; $i < $number; $i++)
+		{
+			// Using bcmod, instead of regular modulus, because of the ridiculously huge number breaking things otherwise
+			if( bcmod("$number",  "$i") == 0 ){
+				// Run the function again, but this time divided by $i to get the next prime factor
+				highestprime( $number/$i );
+				exit;
 			}
-			
-			echo $number;
 		}
+		
+		echo $number;
+	}
 
-		highestprime(600851475143);
+	highestprime(600851475143);
 				</code>
 			</pre>
 		</p>
